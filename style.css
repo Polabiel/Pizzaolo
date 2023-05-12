@@ -86,9 +86,10 @@ article {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex: 1;
     width: 100vw;
-    padding: 2.5%;
-    background-color: red;
+    height: 25vh;
+    background-color: transparent;
 }
 
 article>* {
@@ -98,14 +99,46 @@ article>* {
 
 .block {
     padding: 20px;
-    border: solid 1px white;
+    background-color: #088f40;
+}
+
+.block:nth-last-child(odd) {
+    background-color: red;
 
 }
 
-.block> h2 {
+.block>h2 {
     text-align: center;
 }
 
 .block>p {
     text-align: justify;
 }
+
+.container {
+    display: flex;
+    max-width: 50%;
+    flex: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.pizzas {
+    display: flex;
+    max-width: 350px;
+    border: 1px solid #000;
+    padding: 5%;
+    margin: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pizzas>img {
+    max-width: 150px;
+}
+/* 
+.pizzas #titulo,
+.pizzas #desc {
+} */
